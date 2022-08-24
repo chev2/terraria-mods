@@ -1,0 +1,5 @@
+displayName = Heart Crystal & Life Fruit Glow
+author = Chev
+version = 1.0.0
+homepage = https://github.com/chev2/terraria-mods
+side = Client

@@ -1,0 +1,1 @@
+Shows "Required for Zenith" in the tooltips of every sword used in the Zenith crafting recipe.
