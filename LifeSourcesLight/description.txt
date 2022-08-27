@@ -1,1 +1,10 @@
 Makes heart crystals & life fruits emit light.
+
+[c/00FFFF:Changelog]
+[v1.1.0] 2022-08-26
+- Added:
+  - A basic config to enable/disable the Heart Crystal and Life Fruit glows individually.
+  - A changelog to the mod description.
+
+[v1.0.0] 2022-08-24
+- Initial release
