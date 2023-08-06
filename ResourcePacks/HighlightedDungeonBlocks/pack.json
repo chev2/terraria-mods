@@ -1,0 +1,9 @@
+{
+    "Name": "Highlighted Dungeon Blocks",
+    "Author": "Chev",
+    "Description": "Highlights crumbling dungeon blocks found in dungeons.",
+    "Version": {
+        "major": 1,
+        "minor": 0
+    }
+}

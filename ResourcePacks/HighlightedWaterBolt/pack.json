@@ -1,0 +1,9 @@
+{
+    "Name": "Highlighted Water Bolt",
+    "Author": "Chev",
+    "Description": "The Water Bolt book in the dungeon is highlighted.",
+    "Version": {
+        "major": 1,
+        "minor": 0
+    }
+}
