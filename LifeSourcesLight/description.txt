@@ -1,6 +1,10 @@
-Makes heart crystals & life fruits emit light.
+Makes heart crystals [i/s1:29] & life fruits [i/s1:1291] emit light.
 
 [c/00FFFF:Changelog]
+[v1.2.0] 2023-08-06
+- Update for tModLoader v1.4.4
+- Life Fruits now glow yellow instead of green to better distinguish them from Jungle Spores
+
 [v1.1.0] 2022-08-26
 - Added:
   - A basic config to enable/disable the Heart Crystal and Life Fruit glows individually.

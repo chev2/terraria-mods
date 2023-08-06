@@ -12,8 +12,8 @@ namespace LifeSourcesLight
         {
             if (type == TileID.LifeFruit && LifeSourcesLight.EnableLifeFruitLight)
             {
-                r = (170f / 255f) * LifeFruitBrightCoefficient;
-                g = (221f / 255f) * LifeFruitBrightCoefficient;
+                r = (221f / 255f) * LifeFruitBrightCoefficient;
+                g = (181f / 255f) * LifeFruitBrightCoefficient;
                 b = (43f / 255f) * LifeFruitBrightCoefficient;
             }
         }

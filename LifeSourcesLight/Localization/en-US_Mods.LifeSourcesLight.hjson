@@ -1,0 +1,15 @@
+Configs: {
+	LifeSourcesLightConfig: {
+		DisplayName: Config
+
+		EnableHeartCrystalLight: {
+			Label: Enable Lighting for Heart Crystal
+			Tooltip: Whether or not to enable lighting for the Heart Crystal.
+		}
+
+		EnableLifeFruitLight: {
+			Label: Enable Lighting for Life Fruit
+			Tooltip: Whether or not to enable lighting for the Life Fruit.
+		}
+	}
+}
