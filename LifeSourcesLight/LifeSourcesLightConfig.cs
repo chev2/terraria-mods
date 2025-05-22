@@ -4,19 +4,18 @@ using Terraria.ModLoader.Config;
 
 namespace LifeSourcesLight
 {
-    [Label("Config")]
     public class LifeSourcesLightConfig : ModConfig
     {
         public override ConfigScope Mode => ConfigScope.ClientSide;
 
+        [LabelKey("$Mods.LifeSourcesLight.Configs.Common.EnableHeartCrystalLight.Label")]
+		[TooltipKey("$Mods.LifeSourcesLight.Configs.Common.EnableHeartCrystalLight.Tooltip")]
         [DefaultValue(true)]
-        [Label("Enable Lighting for Heart Crystal")]
-        [Tooltip("Whether or not to enable lighting for the Heart Crystal.")]
         public bool EnableHeartCrystalLight { get; set; }
 
+        [LabelKey("$Mods.LifeSourcesLight.Configs.Common.EnableLifeFruitLight.Label")]
+		[TooltipKey("$Mods.LifeSourcesLight.Configs.Common.EnableLifeFruitLight.Tooltip")]
         [DefaultValue(true)]
-        [Label("Enable Lighting for Life Fruit")]
-        [Tooltip("Whether or not to enable lighting for the Life Fruit.")]
         public bool EnableLifeFruitLight { get; set; }
 
         public override void OnChanged()
