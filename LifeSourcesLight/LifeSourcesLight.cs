@@ -4,21 +4,12 @@ namespace LifeSourcesLight
 {
     public class LifeSourcesLight : Mod
     {
-        internal static bool _enableHeartCrystalLight;
-        public static bool EnableHeartCrystalLight
+        public override void PostSetupContent()
         {
-            get { return _enableHeartCrystalLight; }
-        }
+            base.PostSetupContent();
 
-        internal static bool _enableLifeFruitLight;
-        public static bool EnableLifeFruitLight
-        {
-            get { return _enableLifeFruitLight; }
-        }
-
-        public override void Load()
-        {
-            base.Load();
+            // Update Main.tileLighted on post-load to ensure config is properly loaded
+            LifeSourcesLightModSystem.UpdateTileLighted();
         }
     }
 }

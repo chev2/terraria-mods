@@ -1,0 +1,5 @@
+Makes life crystals & life fruits emit light.
+
+Comes with a config, if you want only life crystals or life fruits to emit light, and not both.
+
+This mod's source code is available on my Terraria mods GitHub repo: https://github.com/chev2/terraria-mods

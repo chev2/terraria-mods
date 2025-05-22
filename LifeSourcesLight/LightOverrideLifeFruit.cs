@@ -10,7 +10,7 @@ namespace LifeSourcesLight
 
         public override void ModifyLight(int i, int j, int type, ref float r, ref float g, ref float b)
         {
-            if (type == TileID.LifeFruit && LifeSourcesLight.EnableLifeFruitLight)
+            if (type == TileID.LifeFruit && LifeSourcesLightModSystem.EnableLightLifeFruit)
             {
                 r = (221f / 255f) * LifeFruitBrightCoefficient;
                 g = (181f / 255f) * LifeFruitBrightCoefficient;
