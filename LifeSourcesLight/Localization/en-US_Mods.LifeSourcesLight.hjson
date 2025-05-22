@@ -2,12 +2,12 @@ Configs: {
 	Common: {
 		EnableLifeFruitLight: {
 			Tooltip: Whether or not to enable lighting for the Life Fruit.
-			Label: Enable Lighting for Life Fruit
+			Label: "[i/s1:1291] Enable Lighting for Life Fruit"
 		}
 
 		EnableHeartCrystalLight: {
 			Tooltip: Whether or not to enable lighting for the Heart Crystal.
-			Label: Enable Lighting for Heart Crystal
+			Label: "[i/s1:29] Enable Lighting for Heart Crystal"
 		}
 	}
 
