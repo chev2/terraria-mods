@@ -10,7 +10,7 @@ namespace LifeSourcesLight
 
         public override void ModifyLight(int i, int j, int type, ref float r, ref float g, ref float b)
         {
-            if (type == TileID.Heart && LifeSourcesLight.EnableHeartCrystalLight)
+            if (type == TileID.Heart && LifeSourcesLightModSystem.EnableLightHeartCrystal)
             {
                 r = (255f / 255f) * LifeCrystalBrightCoefficient;
                 g = (38f / 255f) * LifeCrystalBrightCoefficient;

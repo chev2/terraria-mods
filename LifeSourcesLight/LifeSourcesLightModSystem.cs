@@ -6,20 +6,35 @@ namespace LifeSourcesLight
 {
     public class LifeSourcesLightModSystem : ModSystem
     {
-        private LifeSourcesLightConfig _configInstance;
-
-        public LifeSourcesLightModSystem() : base()
-        {
-            _configInstance = ModContent.GetInstance<LifeSourcesLightConfig>();
+        internal static bool _enableLightHeartCrystal = true;
+        public static bool EnableLightHeartCrystal {
+            get { return _enableLightHeartCrystal; }
         }
 
+        internal static bool _enableLightLifeFruit = true;
+        public static bool EnableLightLifeFruit {
+            get { return _enableLightLifeFruit; }
+        }
+
+        // We use the booleans above later in an if-check, and to my knowledge,
+        //  that if-check runs every tick or every frame.
+        // It's more efficient than calling ModContent.GetInstance() every tick
+        //  (as far as I'm aware)
         public void ApplySettings()
         {
-            LifeSourcesLight._enableHeartCrystalLight = _configInstance.EnableHeartCrystalLight;
-            LifeSourcesLight._enableLifeFruitLight = _configInstance.EnableLifeFruitLight;
+            LifeSourcesLightConfig configInstance = ModContent.GetInstance<LifeSourcesLightConfig>();
 
-            Main.tileLighted[TileID.Heart] = LifeSourcesLight._enableHeartCrystalLight;
-            Main.tileLighted[TileID.LifeFruit] = LifeSourcesLight._enableLifeFruitLight;
+            _enableLightHeartCrystal = configInstance.EnableHeartCrystalLight;
+            _enableLightLifeFruit = configInstance.EnableLifeFruitLight;
+
+            UpdateTileLighted();
+        }
+
+        // Modified Main.tileLighted for the heart crystal & life fruit
+        // Necessary in order to enable lighting calculations for both
+        public static void UpdateTileLighted() {
+            Main.tileLighted[TileID.Heart] = EnableLightHeartCrystal;
+            Main.tileLighted[TileID.LifeFruit] = EnableLightLifeFruit;
         }
     }
 }
