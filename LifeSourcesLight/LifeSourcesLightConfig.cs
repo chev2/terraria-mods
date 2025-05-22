@@ -9,12 +9,12 @@ namespace LifeSourcesLight
         public override ConfigScope Mode => ConfigScope.ClientSide;
 
         [LabelKey("$Mods.LifeSourcesLight.Configs.Common.EnableHeartCrystalLight.Label")]
-		[TooltipKey("$Mods.LifeSourcesLight.Configs.Common.EnableHeartCrystalLight.Tooltip")]
+        [TooltipKey("$Mods.LifeSourcesLight.Configs.Common.EnableHeartCrystalLight.Tooltip")]
         [DefaultValue(true)]
         public bool EnableHeartCrystalLight { get; set; }
 
         [LabelKey("$Mods.LifeSourcesLight.Configs.Common.EnableLifeFruitLight.Label")]
-		[TooltipKey("$Mods.LifeSourcesLight.Configs.Common.EnableLifeFruitLight.Tooltip")]
+        [TooltipKey("$Mods.LifeSourcesLight.Configs.Common.EnableLifeFruitLight.Tooltip")]
         [DefaultValue(true)]
         public bool EnableLifeFruitLight { get; set; }
 
