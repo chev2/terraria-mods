@@ -1,0 +1,15 @@
+Configs: {
+	Common: {
+		EnableLifeFruitLight: {
+			Tooltip: Activar/desactivar la iluminación de la Fruta de la vida.
+			Label: "[i/s1:1291] Habilitar la iluminación de la Fruta de la vida"
+		}
+
+		EnableHeartCrystalLight: {
+			Tooltip: Activar/desactivar la iluminación del Cristal de vida.
+			Label: "[i/s1:29] Habilitar la iluminación del Cristal de vida"
+		}
+	}
+
+	LifeSourcesLightConfig.DisplayName: Configuración
+}
